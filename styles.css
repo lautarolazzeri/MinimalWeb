@@ -82,4 +82,41 @@ header{
 }
 .brands .marcas img{
     height: 100px;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+.brands .marcas img:hover{
+    filter: grayscale(0%);
+    box-shadow: 3px 1px 100px #8318fe;
+}
+.brands .info{
+    width: 45%;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.brands .info a{
+    padding: 7px 15px 7px 15px;
+    width: 9rem;
+    margin-top: 1.5rem;
+    border-radius:10px;
+    background-color: #e1e1e1;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(26, 24, 24);
+    font-weight: 600;
+
+}
+.brands .info h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.marcas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px; 
+    row-gap: 30px;    
 }
