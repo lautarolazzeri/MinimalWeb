@@ -36,6 +36,7 @@ header{
 }
 .main{
   padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #e1e1e1;
   color: #222;
   text-align: center;
@@ -62,9 +63,6 @@ header{
 .icon i{
   font-size: 2rem;
   margin-bottom: .6rem ;
-}
-.icon::after{
-  background-image: url(images/mountain.jpeg);  
 }
 .heroCont p{
     color: #fff;
