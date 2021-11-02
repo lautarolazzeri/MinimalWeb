@@ -150,19 +150,32 @@ header{
 .pics{
   width: 100%;
   background-color: #f1f1f1;
-  height: auto;
   padding-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top:3rem;
+  padding-top:5rem;
 }
 .pics h2{
-  font-size:2.4rem;
+  font-size:3rem;
   font-family: Poppins, sans-serif;
   font-weight: 900;
 }
 .pics img{
   width: 100px;
+}
+.images{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 7rem;
+}
+.images img{
+  width: 400px;
+  transition: all 0.2s  ease-in-out;
+}
+.images img:hover {
+  filter: grayscale(100%);
 }
