@@ -84,7 +84,7 @@ header{
 }
 .navigation span{
     font-size: 2rem;
-    border: 5px solid #000;
+    border: 5px solid #222;
     padding: 9px;
 }   
 
@@ -101,10 +101,13 @@ header{
     height: 100px;
     margin: 0 auto;
     filter: grayscale(100%);
+    transition: all 3s ease;
 }
 .brands .marcas img:hover{
     filter: grayscale(0%);
-    box-shadow: 3px 1px 100px #8318fe;
+    -webkit-filter: drop-shadow(5px 4px 20px #8318fe);
+    filter:         drop-shadow(5px 4px 20px #8318fe); 
+
 }
 .brands .info{
     width: 45%;
