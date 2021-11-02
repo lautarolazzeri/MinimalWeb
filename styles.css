@@ -35,3 +35,14 @@ header{
     font-family: 'Poppins', sans-serif;
     letter-spacing: 10px;
 }
+.main{
+  padding-top: 3rem;
+  background-color: #e1e1e1;
+  color: #222;
+  text-align: center;
+}
+
+.main p {
+  margin: 0 auto;
+  width: 40%;
+}
