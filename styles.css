@@ -1,19 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1{
-  font-size: .2rem;
+html{
+  scroll-behavior: smooth;
 }
-header {
-  height: 80vh;
-  width: 100%;
-  background-image: url(images/mountain.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: cover;
-  background-size: cover;
+header{
+    height: 80vh;
+    width: 100%;
+    background-image: url(images/mountain.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-size: cover;
+}
+.heroCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    transform: translateX(-50%)
 }
 .heroCont {
   display: flex;
@@ -55,8 +66,8 @@ header {
 }
 .main p {
   margin: 0 auto;
-  font-size: 1.1rem;
-  padding-bottom: 2rem;
+  font-size: 1.3rem;
+  padding-bottom:2rem;
 }
 .main-text {
   width: 90%;
@@ -166,9 +177,29 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
+}
+.brands .info a{
+    padding: 15px 20px 15px 20px;
+    width: 9rem;
+    margin-top: 1.5rem;
+    border-radius:10px;
+    background-color: #e1e1e1;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(26, 24, 24);
+    font-weight: 600;
+    font-size: 1.2rem;
 
-  .marcas {
+}
+.brands .info h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.info p{
+  font-size: 1.3rem;
+}
+.marcas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
@@ -206,4 +237,41 @@ header {
 }
 .images img:hover {
   filter: grayscale(100%);
+}
+footer{
+  height: 15rem;
+  background-color: #000 ;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4rem;
+}
+
+footer .links a {
+  padding: 20px 30px 20px 30px;
+  color: #222;
+  background-color: #fff;
+  border-radius: 25px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size:20px;
+  margin-bottom: 3rem;
+}
+.copyright{
+  margin-top:4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+}
+.copyright h6{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  padding-top:30px;
+}
+.copyright a{
+  color: #fff;
+  
 }
