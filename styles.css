@@ -289,63 +289,25 @@ footer .links a {
 
 
 
-@media (max-width: 950px ) {
-  .marcas {
-    column-gap: 15px;
-    row-gap: 30px;
-}
-.marcas img{
-  height: 80px;
-}
-}
 
 
 
-
-@media (max-width: 1300px ) {
+@media (max-width: 425px ) {
   .images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
-    row-gap: 50px;
-  }
-  .images img{
-    width:300px;
-  } 
-}
-@media (max-width: 1024px ) {
-  .images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
-    row-gap: 50px;
-  }
-  .images img{
-    width: 250px;
-  }
-}
-
-@media (max-width: 850px ) {
-  .marcas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 15px;
-    row-gap: 30px;
-  }
-.marcas img{
-  height: 80px;
-  }
-  .images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
-    row-gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
   }
   .images img {
     width: 300px;
   }
-  .brands .info p {
-    padding-bottom: 2rem;
+
+  .marcas{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .marcas img {
+    height: 100px;
+  }
+  .navigation {
+    display: none;
   }
 }
 @media (max-width: 640px ) {
@@ -381,21 +343,60 @@ footer .links a {
     text-align: center;
   }
 }
-@media (max-width: 425px ) {
+
+@media (max-width: 850px ) {
+  .marcas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 30px;
+  }
+.marcas img{
+  height: 80px;
+  }
   .images {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
   }
   .images img {
     width: 300px;
   }
+  .brands .info p {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 950px ) {
+  .marcas {
+    column-gap: 15px;
+    row-gap: 30px;
+}
+.marcas img{
+  height: 80px;
+}
+}
+@media (max-width: 1024px ) {
+  .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+  .images img{
+    width: 250px;
+  }
+}
 
-  .marcas{
-    grid-template-columns: repeat(1, 1fr);
+
+@media (max-width: 1300px ) {
+  .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
   }
-  .marcas img {
-    height: 100px;
-  }
-  .navigation {
-    display: none;
-  }
+  .images img{
+    width:300px;
+  } 
 }
